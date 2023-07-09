@@ -1,0 +1,31 @@
+@use "media-query" as media;
+@use "reset";
+
+@font-face {
+  font-family: "Dickson Regular";
+  src: url(../fonts/dickson-regular.ttf);
+}
+
+@font-face {
+  font-family: "Dickson Bold";
+  src: url(../fonts/dickson-bold.ttf);
+}
+
+@font-face {
+  font-family: "Punk Rotten";
+  src: url(../fonts/punk-rotten.ttf);
+}
+
+body {
+  h1 {
+    font-family: "Punk Rotten";
+  }
+
+  h2 {
+    font-family: "Punk Rotten";
+  }
+
+  h3 {
+    font-family: "Dickson Bold";
+  }
+}

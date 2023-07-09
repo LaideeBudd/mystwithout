@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Dickson Regular";
+  src: url(../fonts/dickson-regular.ttf);
+}
+@font-face {
+  font-family: "Dickson Bold";
+  src: url(../fonts/dickson-bold.ttf);
+}
+@font-face {
+  font-family: "Punk Rotten";
+  src: url(../fonts/punk-rotten.ttf);
+}
+body h1 {
+  font-family: "Punk Rotten";
+}
+body h2 {
+  font-family: "Punk Rotten";
+}
+body h3 {
+  font-family: "Dickson Bold";
+}
+
+/*# sourceMappingURL=style.css.map */
