@@ -17,6 +17,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  background-color: #4f1271;
+
+  @include media.sm {
+    background-color: #fff;
+  }
   h1 {
     font-family: "Punk Rotten";
   }
@@ -27,5 +34,131 @@ body {
 
   h3 {
     font-family: "Dickson Bold";
+  }
+
+  nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    z-index: 999;
+    width: 100vw;
+
+    @include media.sm {
+      width: 50vw;
+      margin-top: 2rem;
+
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: block;
+      @include media.sm {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #4f1271;
+        border-radius: 50px 0 0 50px;
+      }
+    }
+
+    .desktop-nav-items {
+      display: flex;
+
+      @include media.sm {
+        display: none;
+      }
+    }
+
+    #hamburger {
+      display: none;
+      color: #fff;
+      font-size: 3rem;
+
+      @include media.sm {
+        display: block;
+      }
+    }
+
+    #nav-items {
+      display: none;
+      align-items: center;
+      width: 100%;
+      background-color: none;
+
+      @include media.sm {
+        display: none;
+        background-color: #250835;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 80%;
+        margin-top: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+
+      a {
+        @include media.sm {
+          text-align: right;
+          width: 100%;
+          background-color: #4f1271;
+          align-self: flex-end;
+          font-size: 1.25rem;
+          padding: 1rem;
+          margin-top: 0.25rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      padding-right: 5rem;
+      font-family: "Punk Rotten";
+      color: #fff;
+      font-size: 2rem;
+
+      @include media.sm {
+        padding-right: 0rem;
+      }
+    }
+
+    img {
+      width: 12rem;
+      margin: 0;
+
+      @include media.sm {
+        width: 5rem;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        margin-right: 3rem;
+      }
+    }
+  }
+  #overlay {
+    @include media.sm {
+      position: fixed; /* Sit on top of the page content */
+      display: none; /* Hidden by default */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+      cursor: pointer; /* Add a pointer on hover */
+    }
+  }
+  header {
+    background-image: url(../images/vinyl-mockup3.png);
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+
+    h1 {
+      font-size: 8rem;
+      color: #fff;
+    }
   }
 }
