@@ -19,17 +19,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #4f1271;
-}
-@media (max-width: 500px) {
-  body {
-    background-color: #fff;
-  }
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  body {
-    background-color: #fff;
-  }
+  background-color: #4f4654;
 }
 body h1 {
   font-family: "Punk Rotten";
@@ -284,6 +274,7 @@ body header .textbox {
   body header .textbox {
     padding-left: 2rem;
     padding-top: 15rem;
+    padding-bottom: 0;
   }
 }
 body header .textbox h1 {
@@ -308,6 +299,14 @@ body header .textbox button {
   color: #fff;
   font-size: 3rem;
   padding: 1rem 7rem;
+}
+body .wave {
+  background-image: url(../images/wave1.svg);
+  aspect-ratio: 9/2;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
