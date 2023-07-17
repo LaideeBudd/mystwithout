@@ -17,7 +17,13 @@
 }
 
 @mixin lg {
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1499px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1500px) {
     @content;
   }
 }

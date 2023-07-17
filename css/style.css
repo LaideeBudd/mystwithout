@@ -58,7 +58,7 @@ body nav {
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body nav {
-    width: 50vw;
+    width: 35vw;
     margin-top: 2rem;
     background-color: transparent;
     flex-direction: column;
@@ -188,7 +188,7 @@ body nav img {
     width: 5rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
 }
 @media (max-width: 500px) {
@@ -226,14 +226,13 @@ body header {
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 25rem;
   display: flex;
+  width: 100%;
   min-height: 100vh;
-  min-width: 100vw;
 }
 @media (max-width: 500px) {
   body header {
-    background-image: url(../images/vinyl-mockup-portrait.png);
+    background-image: url(../images/vinyl-mockup-portrait-xs.png);
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -243,10 +242,11 @@ body header {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body header {
-    background-image: url(../images/vinyl-mockup3.png);
+    background-image: url(../images/vinyl-mockup-portrait.png);
+    background-position: top;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   body header {
     background-image: url(../images/vinyl-mockup3.png);
   }
@@ -255,10 +255,35 @@ body header .textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   body header .textbox {
     padding-left: 75rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  body header .textbox {
+    padding-left: 60rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header .textbox {
+    padding-left: 20rem;
+    padding-top: 75rem;
+    padding-bottom: 20rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header .textbox {
+    padding-left: 10rem;
+    padding-top: 35rem;
+  }
+}
+@media (max-width: 500px) {
+  body header .textbox {
+    padding-left: 2rem;
+    padding-top: 15rem;
   }
 }
 body header .textbox h1 {
