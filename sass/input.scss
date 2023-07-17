@@ -21,6 +21,10 @@ body {
   flex-direction: column;
   background-color: #4f1271;
 
+  @include media.xs {
+    background-color: #fff;
+  }
+
   @include media.sm {
     background-color: #fff;
   }
@@ -43,7 +47,14 @@ body {
     align-self: flex-end;
     z-index: 999;
     width: 100vw;
-    background-color: #4f4654;
+
+    @include media.xs {
+      width: 50vw;
+      margin-top: 2rem;
+      background-color: transparent;
+
+      flex-direction: column;
+    }
 
     @include media.sm {
       width: 50vw;
@@ -55,6 +66,14 @@ body {
 
     .navbar {
       display: block;
+      @include media.xs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #4f1271;
+        border-radius: 50px 0 0 50px;
+      }
+
       @include media.sm {
         width: 100%;
         display: flex;
@@ -69,6 +88,10 @@ body {
       color: #fff;
       font-size: 3rem;
 
+      @include media.xs {
+        display: block;
+      }
+
       @include media.sm {
         display: block;
       }
@@ -79,6 +102,17 @@ body {
       align-items: center;
       width: 100%;
       background-color: none;
+
+      @include media.xs {
+        display: none;
+        background-color: #250835;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 80%;
+        margin-top: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
 
       @include media.sm {
         display: none;
@@ -92,6 +126,16 @@ body {
       }
 
       a {
+        @include media.xs {
+          text-align: right;
+          width: 100%;
+          background-color: #4f1271;
+          align-self: flex-end;
+          font-size: 2rem;
+          padding: 1rem;
+          margin-top: 0.25rem;
+          margin-bottom: 0.25rem;
+        }
         @include media.sm {
           text-align: right;
           width: 100%;
@@ -112,14 +156,24 @@ body {
       color: #fff;
       font-size: 3rem;
 
+      @include media.xs {
+        padding-right: 0rem;
+      }
       @include media.sm {
         padding-right: 0rem;
       }
     }
 
     img {
-      width: 12rem;
+      width: 10rem;
       margin: 0;
+
+      @include media.xs {
+        width: 5rem;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        margin-right: 3rem;
+      }
 
       @include media.sm {
         width: 5rem;
@@ -130,6 +184,19 @@ body {
     }
   }
   #overlay {
+    @include media.xs {
+      position: fixed; /* Sit on top of the page content */
+      display: none; /* Hidden by default */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+      cursor: pointer; /* Add a pointer on hover */
+    }
     @include media.sm {
       position: fixed; /* Sit on top of the page content */
       display: none; /* Hidden by default */
@@ -146,13 +213,59 @@ body {
   }
   header {
     background-image: url(../images/vinyl-mockup3.png);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 25rem;
+    display: flex;
     min-height: 100vh;
-    max-width: 100vw;
+    min-width: 100vw;
 
-    h1 {
-      font-size: 8rem;
-      color: #fff;
+    @include media.xs {
+      background-image: url(../images/vinyl-mockup-portrait.png);
+    }
+
+    @include media.sm {
+      background-image: url(../images/vinyl-mockup-portrait.png);
+    }
+
+    @include media.md {
+      background-image: url(../images/vinyl-mockup3.png);
+    }
+
+    @include media.lg {
+      background-image: url(../images/vinyl-mockup3.png);
+    }
+
+    .textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include media.lg {
+        padding-left: 75rem;
+      }
+
+      h1 {
+        font-size: 7rem;
+        color: #fff;
+        margin-bottom: -1.5rem;
+        @include media.md {
+          font-size: 8rem;
+        }
+      }
+      h3 {
+        color: #fff;
+        font-size: 4rem;
+      }
+      button {
+        background-color: #4f1271;
+        border: none;
+        border-radius: 50px;
+        font-family: "Dickson Bold";
+        color: #fff;
+        font-size: 3rem;
+        padding: 1rem 7rem;
+      }
     }
   }
 }

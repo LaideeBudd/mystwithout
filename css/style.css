@@ -21,7 +21,12 @@ body {
   flex-direction: column;
   background-color: #4f1271;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  body {
+    background-color: #fff;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body {
     background-color: #fff;
   }
@@ -42,9 +47,16 @@ body nav {
   align-self: flex-end;
   z-index: 999;
   width: 100vw;
-  background-color: #4f4654;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  body nav {
+    width: 50vw;
+    margin-top: 2rem;
+    background-color: transparent;
+    flex-direction: column;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body nav {
     width: 50vw;
     margin-top: 2rem;
@@ -55,7 +67,16 @@ body nav {
 body nav .navbar {
   display: block;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  body nav .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #4f1271;
+    border-radius: 50px 0 0 50px;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body nav .navbar {
     width: 100%;
     display: flex;
@@ -69,7 +90,12 @@ body nav #hamburger {
   color: #fff;
   font-size: 3rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  body nav #hamburger {
+    display: block;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body nav #hamburger {
     display: block;
   }
@@ -80,7 +106,7 @@ body nav #nav-items {
   width: 100%;
   background-color: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body nav #nav-items {
     display: none;
     background-color: #250835;
@@ -92,7 +118,31 @@ body nav #nav-items {
     padding-bottom: 0.25rem;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav #nav-items {
+    display: none;
+    background-color: #250835;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 80%;
+    margin-top: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+@media (max-width: 500px) {
+  body nav #nav-items a {
+    text-align: right;
+    width: 100%;
+    background-color: #4f1271;
+    align-self: flex-end;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body nav #nav-items a {
     text-align: right;
     width: 100%;
@@ -111,16 +161,21 @@ body nav a {
   color: #fff;
   font-size: 3rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  body nav a {
+    padding-right: 0rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body nav a {
     padding-right: 0rem;
   }
 }
 body nav img {
-  width: 12rem;
+  width: 10rem;
   margin: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body nav img {
     width: 5rem;
     margin-left: 1rem;
@@ -128,7 +183,30 @@ body nav img {
     margin-right: 3rem;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 501px) and (max-width: 767px) {
+  body nav img {
+    width: 5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  body #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
   body #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -145,13 +223,66 @@ body nav img {
 }
 body header {
   background-image: url(../images/vinyl-mockup3.png);
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 25rem;
+  display: flex;
   min-height: 100vh;
-  max-width: 100vw;
+  min-width: 100vw;
 }
-body header h1 {
-  font-size: 8rem;
+@media (max-width: 500px) {
+  body header {
+    background-image: url(../images/vinyl-mockup-portrait.png);
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header {
+    background-image: url(../images/vinyl-mockup-portrait.png);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header {
+    background-image: url(../images/vinyl-mockup3.png);
+  }
+}
+@media (min-width: 1200px) {
+  body header {
+    background-image: url(../images/vinyl-mockup3.png);
+  }
+}
+body header .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  body header .textbox {
+    padding-left: 75rem;
+  }
+}
+body header .textbox h1 {
+  font-size: 7rem;
   color: #fff;
+  margin-bottom: -1.5rem;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header .textbox h1 {
+    font-size: 8rem;
+  }
+}
+body header .textbox h3 {
+  color: #fff;
+  font-size: 4rem;
+}
+body header .textbox button {
+  background-color: #4f1271;
+  border: none;
+  border-radius: 50px;
+  font-family: "Dickson Bold";
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
