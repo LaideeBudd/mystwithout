@@ -31,11 +31,15 @@ body {
   }
 
   h2 {
-    font-family: "Punk Rotten";
+    font-family: "Dickson Bold";
   }
 
   h3 {
     font-family: "Dickson Bold";
+  }
+
+  p {
+    font-family: "Dickson Regular";
   }
 
   nav {
@@ -281,7 +285,7 @@ body {
         font-size: 4rem;
       }
       button {
-        background-color: #4f1271;
+        background-color: #4d285e;
         border: none;
         border-radius: 50px;
         font-family: "Dickson Bold";
@@ -294,6 +298,82 @@ body {
 
   .wave {
     background-image: url(../images/wave1.svg);
+    aspect-ratio: 9 / 2;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #about {
+    background-color: #4f1271;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 5rem;
+
+    @include media.xs {
+      flex-direction: column;
+    }
+
+    @include media.sm {
+      flex-direction: column;
+    }
+
+    @include media.md {
+      flex-direction: column;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      margin-right: 5rem;
+      align-items: center;
+      justify-content: center;
+
+      @include media.xs {
+        width: 80%;
+        margin-right: 0;
+      }
+
+      @include media.sm {
+        width: 80%;
+        margin-right: 0;
+      }
+
+      @include media.md {
+        width: 60%;
+        margin-right: 0;
+      }
+
+      h3 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    img {
+      background-size: cover;
+      width: 30rem;
+      height: 30rem;
+
+      @include media.xs {
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+  }
+
+  .wave2 {
+    background-image: url(../images/wave2.svg);
     aspect-ratio: 9 / 2;
     width: 100%;
     background-repeat: no-repeat;
