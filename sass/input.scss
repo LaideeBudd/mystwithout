@@ -214,68 +214,69 @@ body {
     }
   }
   header {
-    background-image: url(../images/vinyl-mockup3.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
+    background-color: rgb(79, 70, 84);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    min-height: 100vh;
-    // min-width: 100vw;
+    max-height: 100vh;
 
     @include media.xs {
-      background-image: url(../images/vinyl-mockup-portrait-xs.png);
+      grid-template-columns: 1fr;
     }
 
     @include media.sm {
-      background-image: url(../images/vinyl-mockup-portrait.png);
+      grid-template-columns: 1fr;
     }
 
     @include media.md {
-      background-image: url(../images/vinyl-mockup-portrait.png);
-      background-position: top;
+      grid-template-columns: 1fr;
+      max-height: 150vh;
     }
 
-    @include media.lg {
-      background-image: url(../images/vinyl-mockup3.png);
+    img {
+      margin-top: 10rem;
+      max-width: 120%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-attachment: fixed;
+
+      @include media.xs {
+        max-width: 100%;
+      }
+
+      @include media.sm {
+        max-width: 100%;
+      }
+
+      @include media.md {
+        max-width: 100%;
+      }
     }
 
     .textbox {
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      align-self: center;
-
-      @include media.xl {
-        padding-left: 75rem;
-      }
+      justify-content: center;
 
       @include media.lg {
-        padding-left: 60rem;
+        padding-top: 8rem;
       }
 
-      @include media.md {
-        padding-left: 20rem;
-        padding-top: 75rem;
-        padding-bottom: 20rem;
-      }
-
-      @include media.sm {
-        padding-left: 10rem;
-        padding-top: 35rem;
-      }
-
-      @include media.xs {
-        padding-left: 2rem;
-        padding-top: 15rem;
-        padding-bottom: 0;
+      @include media.xl {
+        padding-top: 10rem;
       }
 
       h1 {
         font-size: 7rem;
         color: #fff;
         margin-bottom: -1.5rem;
+
+        @include media.xs {
+          font-size: 6rem;
+        }
+
         @include media.md {
           font-size: 8rem;
         }
@@ -283,6 +284,10 @@ body {
       h3 {
         color: #fff;
         font-size: 4rem;
+
+        @include media.xs {
+          font-size: 3rem;
+        }
       }
       button {
         background-color: #4d285e;
@@ -292,6 +297,10 @@ body {
         color: #fff;
         font-size: 3rem;
         padding: 1rem 7rem;
+
+        @include media.xs {
+          font-size: 2rem;
+        }
       }
     }
   }

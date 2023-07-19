@@ -215,75 +215,76 @@ body nav img {
   }
 }
 body header {
-  background-image: url(../images/vinyl-mockup3.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
+  background-color: rgb(79, 70, 84);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 @media (max-width: 500px) {
   body header {
-    background-image: url(../images/vinyl-mockup-portrait-xs.png);
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body header {
-    background-image: url(../images/vinyl-mockup-portrait.png);
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body header {
-    background-image: url(../images/vinyl-mockup-portrait.png);
-    background-position: top;
+    grid-template-columns: 1fr;
+    max-height: 150vh;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
-  body header {
-    background-image: url(../images/vinyl-mockup3.png);
+body header img {
+  margin-top: 10rem;
+  max-width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+@media (max-width: 500px) {
+  body header img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body header img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body header img {
+    max-width: 100%;
   }
 }
 body header .textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
-}
-@media (min-width: 1500px) {
-  body header .textbox {
-    padding-left: 75rem;
-  }
+  justify-content: center;
 }
 @media (min-width: 1200px) and (max-width: 1499px) {
   body header .textbox {
-    padding-left: 60rem;
+    padding-top: 8rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1500px) {
   body header .textbox {
-    padding-left: 20rem;
-    padding-top: 75rem;
-    padding-bottom: 20rem;
-  }
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  body header .textbox {
-    padding-left: 10rem;
-    padding-top: 35rem;
-  }
-}
-@media (max-width: 500px) {
-  body header .textbox {
-    padding-left: 2rem;
-    padding-top: 15rem;
-    padding-bottom: 0;
+    padding-top: 10rem;
   }
 }
 body header .textbox h1 {
   font-size: 7rem;
   color: #fff;
   margin-bottom: -1.5rem;
+}
+@media (max-width: 500px) {
+  body header .textbox h1 {
+    font-size: 6rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body header .textbox h1 {
@@ -294,6 +295,11 @@ body header .textbox h3 {
   color: #fff;
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  body header .textbox h3 {
+    font-size: 3rem;
+  }
+}
 body header .textbox button {
   background-color: #4d285e;
   border: none;
@@ -302,6 +308,11 @@ body header .textbox button {
   color: #fff;
   font-size: 3rem;
   padding: 1rem 7rem;
+}
+@media (max-width: 500px) {
+  body header .textbox button {
+    font-size: 2rem;
+  }
 }
 body .wave {
   background-image: url(../images/wave1.svg);
