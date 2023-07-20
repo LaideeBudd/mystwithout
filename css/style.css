@@ -34,6 +34,7 @@ body p {
   font-family: "Dickson Regular";
 }
 body nav {
+  padding-left: 1rem;
   position: fixed;
   display: flex;
   align-items: center;
