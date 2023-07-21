@@ -363,7 +363,7 @@ body {
       }
 
       h3 {
-        font-size: 5rem;
+        font-size: 8rem;
       }
 
       p {
@@ -410,21 +410,23 @@ body {
     display: grid;
     color: #fff;
     grid-template-columns: 1fr 2fr 1fr 1fr;
-    padding-bottom: 13rem;
 
     @include media.xs {
       grid-template-columns: 1fr;
       justify-content: center;
+      padding-bottom: 3rem;
     }
 
     @include media.sm {
       grid-template-columns: 1fr;
       justify-content: center;
+      padding-bottom: 3rem;
     }
 
     @include media.md {
       grid-template-columns: 1fr;
       justify-content: center;
+      padding-bottom: 3rem;
     }
 
     h2 {
@@ -554,5 +556,13 @@ body {
         }
       }
     }
+  }
+  .wave3 {
+    background-image: url(../images/wave3.svg);
+    aspect-ratio: 9 / 2;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
