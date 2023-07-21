@@ -22,3 +22,20 @@ const navFlex = () => {
 };
 
 window.onresize = navFlex;
+
+const playButton = document.getElementById("play-button");
+const audio = document.getElementById("song-clip");
+
+// const playSample = () => {
+//   audio.play();
+// };
+
+const playSample = () => {
+  if (audio.paused) {
+    audio.play();
+    playButton.src = "./images/pausebuttons.png";
+  } else {
+    audio.pause();
+    playButton.src = "./images/playbuttons.png";
+  }
+};
