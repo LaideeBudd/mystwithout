@@ -364,6 +364,14 @@ body {
 
       h3 {
         font-size: 8rem;
+
+        @include media.xs {
+          font-size: 6rem;
+        }
+
+        @include media.sm {
+          font-size: 6rem;
+        }
       }
 
       p {
@@ -441,18 +449,21 @@ body {
         position: static;
         grid-column-start: 1;
         justify-self: center;
+        font-size: 6rem;
       }
 
       @include media.sm {
         position: static;
         grid-column-start: 1;
         justify-self: center;
+        font-size: 6rem;
       }
 
       @include media.md {
         position: static;
         grid-column-start: 1;
         justify-self: center;
+        font-size: 6rem;
       }
     }
 
@@ -564,5 +575,167 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  #tour {
+    min-height: 75vh;
+    background-color: #4a4063;
+    color: #fff;
+    background-image: none;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10rem;
+    justify-content: left;
+
+    @include media.xs {
+      grid-template-columns: 1fr;
+      background-image: url(../images/lamp-portrait.png);
+      background-size: 225%;
+      background-position: center;
+      padding-bottom: 30rem;
+      padding-left: 0;
+    }
+    @include media.sm {
+      grid-template-columns: 1fr;
+      background-image: url(../images/lamp-portrait.png);
+      background-size: 140%;
+      background-position: center;
+      padding-bottom: 25rem;
+      padding-left: 0;
+    }
+
+    @include media.md {
+      grid-template-columns: 1fr;
+      background-image: url(../images/lamp-portrait.png);
+      background-size: 120%;
+      background-position: center;
+      padding-bottom: 40rem;
+      padding-left: 0;
+    }
+
+    .flexbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      @include media.xs {
+        color: #250835;
+      }
+
+      @include media.sm {
+        color: #250835;
+      }
+
+      @include media.md {
+        color: #250835;
+      }
+      h2 {
+        font-size: 8rem;
+        margin-top: -8rem;
+        margin-bottom: 3rem;
+
+        @include media.xs {
+          margin-top: 0;
+        }
+
+        @include media.sm {
+          margin-top: 0;
+        }
+
+        @include media.md {
+          margin-top: 0;
+
+          font-size: 10rem;
+        }
+      }
+
+      .textbox {
+        display: flex;
+        flex-direction: row;
+
+        @include media.xs {
+          flex-direction: column;
+        }
+
+        @include media.sm {
+          flex-direction: column;
+        }
+
+        @include media.md {
+          flex-direction: column;
+        }
+
+        p {
+          font-size: 5rem;
+          padding-right: 2rem;
+
+          @include media.lg {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      button {
+        margin-top: 2rem;
+        width: 100%;
+        background-color: #4d285e;
+        border: none;
+        border-radius: 150px;
+        font-family: "Dickson Bold";
+        color: #fff;
+        font-size: 3rem;
+        padding: 2rem;
+
+        @include media.xs {
+          padding: 2rem 7rem;
+        }
+
+        @include media.sm {
+          padding: 2rem 8rem;
+        }
+
+        @include media.md {
+          padding: 2rem 12rem;
+        }
+
+        @include media.lg {
+        }
+      }
+    }
+
+    img {
+      width: 90%;
+      margin-top: -12rem;
+
+      @include media.xs {
+        display: none;
+      }
+
+      @include media.sm {
+        display: none;
+      }
+
+      @include media.md {
+        display: none;
+      }
+
+      @include media.lg {
+        margin-top: -10rem;
+      }
+    }
+  }
+
+  .wave4 {
+    background-image: url(../images/wave4.svg);
+    aspect-ratio: 9 / 3;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
   }
 }

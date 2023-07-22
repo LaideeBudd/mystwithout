@@ -377,6 +377,16 @@ body #about .info {
 body #about .info h3 {
   font-size: 8rem;
 }
+@media (max-width: 500px) {
+  body #about .info h3 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #about .info h3 {
+    font-size: 6rem;
+  }
+}
 body #about .info p {
   font-size: 2rem;
 }
@@ -454,6 +464,7 @@ body #listen h2 {
     position: static;
     grid-column-start: 1;
     justify-self: center;
+    font-size: 6rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -461,6 +472,7 @@ body #listen h2 {
     position: static;
     grid-column-start: 1;
     justify-self: center;
+    font-size: 6rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -468,6 +480,7 @@ body #listen h2 {
     position: static;
     grid-column-start: 1;
     justify-self: center;
+    font-size: 6rem;
   }
 }
 body #listen img {
@@ -588,6 +601,178 @@ body .wave3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+body #tour {
+  min-height: 75vh;
+  background-color: #4a4063;
+  color: #fff;
+  background-image: none;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10rem;
+  justify-content: left;
+}
+@media (max-width: 500px) {
+  body #tour {
+    grid-template-columns: 1fr;
+    background-image: url(../images/lamp-portrait.png);
+    background-size: 225%;
+    background-position: center;
+    padding-bottom: 30rem;
+    padding-left: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour {
+    grid-template-columns: 1fr;
+    background-image: url(../images/lamp-portrait.png);
+    background-size: 140%;
+    background-position: center;
+    padding-bottom: 25rem;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour {
+    grid-template-columns: 1fr;
+    background-image: url(../images/lamp-portrait.png);
+    background-size: 120%;
+    background-position: center;
+    padding-bottom: 40rem;
+    padding-left: 0;
+  }
+}
+body #tour .flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  body #tour .flexbox {
+    color: #250835;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour .flexbox {
+    color: #250835;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour .flexbox {
+    color: #250835;
+  }
+}
+body #tour .flexbox h2 {
+  font-size: 8rem;
+  margin-top: -8rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  body #tour .flexbox h2 {
+    margin-top: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour .flexbox h2 {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour .flexbox h2 {
+    margin-top: 0;
+    font-size: 10rem;
+  }
+}
+body #tour .flexbox .textbox {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  body #tour .flexbox .textbox {
+    flex-direction: column;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour .flexbox .textbox {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour .flexbox .textbox {
+    flex-direction: column;
+  }
+}
+body #tour .flexbox .textbox p {
+  font-size: 5rem;
+  padding-right: 2rem;
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  body #tour .flexbox .textbox p {
+    font-size: 3rem;
+  }
+}
+body #tour .flexbox button {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #4d285e;
+  border: none;
+  border-radius: 150px;
+  font-family: "Dickson Bold";
+  color: #fff;
+  font-size: 3rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  body #tour .flexbox button {
+    padding: 2rem 7rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour .flexbox button {
+    padding: 2rem 8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour .flexbox button {
+    padding: 2rem 12rem;
+  }
+}
+body #tour img {
+  width: 90%;
+  margin-top: -12rem;
+}
+@media (max-width: 500px) {
+  body #tour img {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body #tour img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body #tour img {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  body #tour img {
+    margin-top: -10rem;
+  }
+}
+body .wave4 {
+  background-image: url(../images/wave4.svg);
+  aspect-ratio: 9/3;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
