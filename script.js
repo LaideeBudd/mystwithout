@@ -39,3 +39,37 @@ const playSample = () => {
     playButton.src = "./images/playbuttons.png";
   }
 };
+
+const purpleShirt = document.getElementById("purple-tshirt");
+
+purpleShirt.addEventListener(
+  "mouseenter",
+  function (event) {
+    event.target.src = "./images/purple-tshirt-front.jpg";
+  },
+  false
+);
+purpleShirt.addEventListener(
+  "mouseleave",
+  function (event) {
+    event.target.src = "./images/purple-tshirt-back.jpg";
+  },
+  false
+);
+
+const blackShirt = document.getElementById("black-tshirt");
+
+blackShirt.addEventListener(
+  "mouseenter",
+  function (event) {
+    event.target.src = "./images/purple-tshirt-back.jpg";
+  },
+  false
+);
+blackShirt.addEventListener(
+  "mouseleave",
+  function (event) {
+    event.target.src = "./images/purple-tshirt-front.jpg";
+  },
+  false
+);
