@@ -70,6 +70,7 @@ body nav .navbar {
     display: flex;
     align-items: center;
     background-color: #4f1271;
+    border: 1px solid #746f9b;
     border-radius: 50px 0 0 50px;
   }
 }
@@ -79,6 +80,7 @@ body nav .navbar {
     display: flex;
     align-items: center;
     background-color: #4f1271;
+    border: 1px solid #746f9b;
     border-radius: 50px 0 0 50px;
   }
 }
@@ -310,7 +312,7 @@ body header .textbox h3 {
   }
 }
 body header .textbox button {
-  background-color: #4d285e;
+  background-color: #4f1271;
   border: none;
   border-radius: 50px;
   font-family: "Dickson Bold";
@@ -396,7 +398,7 @@ body #about .info p {
   font-size: 2rem;
 }
 body #about img {
-  background-size: cover;
+  object-fit: cover;
   width: 35rem;
   height: 35rem;
 }
@@ -652,23 +654,29 @@ body #tour {
 body #tour .flexbox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 @media (max-width: 500px) {
   body #tour .flexbox {
     color: #250835;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
   body #tour .flexbox {
     color: #250835;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   body #tour .flexbox {
     color: #250835;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 body #tour .flexbox h2 {
@@ -723,7 +731,7 @@ body #tour .flexbox .textbox p {
 body #tour .flexbox button {
   margin-top: 2rem;
   width: 100%;
-  background-color: #4d285e;
+  background-color: #4f1271;
   border: none;
   border-radius: 150px;
   font-family: "Dickson Bold";
@@ -734,6 +742,7 @@ body #tour .flexbox button {
 @media (max-width: 500px) {
   body #tour .flexbox button {
     padding: 2rem 7rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 501px) and (max-width: 767px) {
@@ -930,7 +939,7 @@ body #shop .card-container .card p {
 body #shop .card-container .card button {
   margin-top: 2rem;
   width: 100%;
-  background-color: #4d285e;
+  background-color: #4f1271;
   border: none;
   border-radius: 150px;
   font-family: "Dickson Bold";
@@ -946,6 +955,50 @@ body #shop .card-container .card button {
 @media (min-width: 768px) and (max-width: 1199px) {
   body #shop .card-container .card button {
     padding: 2rem;
+  }
+}
+body footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../images/wave5.svg);
+  aspect-ratio: 9/3;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+body footer div {
+  color: #fff;
+  font-family: "Dickson Regular";
+  font-size: 3rem;
+  padding-top: 18rem;
+  padding-right: 5rem;
+}
+@media (max-width: 500px) {
+  body footer div {
+    font-size: 1.5rem;
+    padding-top: 6rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  body footer div {
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body footer div {
+    padding-top: 12rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  body footer div {
+    padding-top: 15rem;
   }
 }
 

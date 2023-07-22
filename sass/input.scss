@@ -78,6 +78,7 @@ body {
         display: flex;
         align-items: center;
         background-color: #4f1271;
+        border: 1px solid #746f9b;
         border-radius: 50px 0 0 50px;
       }
 
@@ -86,6 +87,7 @@ body {
         display: flex;
         align-items: center;
         background-color: #4f1271;
+        border: 1px solid #746f9b;
         border-radius: 50px 0 0 50px;
       }
     }
@@ -299,7 +301,7 @@ body {
         }
       }
       button {
-        background-color: #4d285e;
+        background-color: #4f1271;
         border: none;
         border-radius: 50px;
         font-family: "Dickson Bold";
@@ -384,7 +386,7 @@ body {
     }
 
     img {
-      background-size: cover;
+      object-fit: cover;
       width: 35rem;
       height: 35rem;
 
@@ -622,20 +624,26 @@ body {
     .flexbox {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
 
       @include media.xs {
         color: #250835;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
 
       @include media.sm {
         color: #250835;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
 
       @include media.md {
         color: #250835;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
       h2 {
         font-size: 8rem;
@@ -686,7 +694,7 @@ body {
       button {
         margin-top: 2rem;
         width: 100%;
-        background-color: #4d285e;
+        background-color: #4f1271;
         border: none;
         border-radius: 150px;
         font-family: "Dickson Bold";
@@ -696,6 +704,7 @@ body {
 
         @include media.xs {
           padding: 2rem 7rem;
+          font-size: 2rem;
         }
 
         @include media.sm {
@@ -880,7 +889,7 @@ body {
         button {
           margin-top: 2rem;
           width: 100%;
-          background-color: #4d285e;
+          background-color: #4f1271;
           border: none;
           border-radius: 150px;
           font-family: "Dickson Bold";
@@ -896,6 +905,49 @@ body {
             padding: 2rem;
           }
         }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url(../images/wave5.svg);
+    aspect-ratio: 9 / 3;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
+    div {
+      color: #fff;
+      font-family: "Dickson Regular";
+      font-size: 3rem;
+      padding-top: 18rem;
+      padding-right: 5rem;
+
+      @include media.xs {
+        font-size: 1.5rem;
+        padding-top: 6rem;
+        padding-right: 1rem;
+      }
+
+      @include media.sm {
+        font-size: 2rem;
+        padding-top: 8rem;
+        padding-right: 2rem;
+      }
+
+      @include media.md {
+        padding-top: 12rem;
+        padding-right: 3rem;
+      }
+
+      @include media.lg {
+        padding-top: 15rem;
       }
     }
   }
