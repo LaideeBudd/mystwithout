@@ -169,6 +169,10 @@ body {
       @include media.sm {
         padding-right: 0rem;
       }
+
+      @include media.md {
+        padding-right: 3rem;
+      }
     }
 
     img {
@@ -737,5 +741,162 @@ body {
     background-position: center;
     background-size: cover;
     z-index: -1;
+  }
+
+  #shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #746f9b;
+    color: #fff;
+
+    h2 {
+      align-self: flex-start;
+      padding-left: 13.5rem;
+      margin-top: -15rem;
+      font-size: 8rem;
+
+      @include media.xs {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+      }
+
+      @include media.sm {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+        font-size: 10rem;
+      }
+
+      @include media.md {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+        font-size: 11rem;
+      }
+
+      @include media.lg {
+        padding-left: 4rem;
+      }
+    }
+
+    h3 {
+      align-self: flex-start;
+      padding-left: 13.5rem;
+      font-size: 5rem;
+      margin-top: 5rem;
+
+      @include media.xs {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+      }
+
+      @include media.sm {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+        font-size: 6rem;
+      }
+
+      @include media.md {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+        font-size: 8rem;
+      }
+
+      @include media.lg {
+        padding-left: 4rem;
+        margin-top: 2rem;
+      }
+    }
+    .card-container {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-content: center;
+
+      @include media.xs {
+        grid-template-columns: 1fr;
+      }
+
+      @include media.sm {
+        grid-template-columns: 1fr;
+      }
+
+      @include media.md {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 25rem;
+          height: 25rem;
+          object-fit: cover;
+
+          @include media.sm {
+            width: 30rem;
+            height: 30rem;
+          }
+
+          @include media.md {
+            width: 50rem;
+            height: 50rem;
+          }
+        }
+
+        h4 {
+          font-family: "Dickson Regular";
+          font-size: 3rem;
+
+          @include media.sm {
+            font-size: 4rem;
+          }
+
+          @include media.md {
+            font-size: 5rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+
+          @include media.sm {
+            font-size: 3rem;
+          }
+
+          @include media.md {
+            font-size: 4rem;
+          }
+        }
+
+        button {
+          margin-top: 2rem;
+          width: 100%;
+          background-color: #4d285e;
+          border: none;
+          border-radius: 150px;
+          font-family: "Dickson Bold";
+          color: #fff;
+          font-size: 3rem;
+          padding: 1rem;
+
+          @include media.sm {
+            padding: 2rem;
+          }
+
+          @include media.md {
+            padding: 2rem;
+          }
+        }
+      }
+    }
   }
 }
