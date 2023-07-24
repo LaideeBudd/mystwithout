@@ -26,10 +26,6 @@ window.onresize = navFlex;
 const playButton = document.getElementById("play-button");
 const audio = document.getElementById("song-clip");
 
-// const playSample = () => {
-//   audio.play();
-// };
-
 const playSample = () => {
   if (audio.paused) {
     audio.play();
@@ -39,6 +35,21 @@ const playSample = () => {
     playButton.src = "./images/playbuttons.png";
   }
 };
+
+const navBar = document.getElementById("navigation");
+const scrollWatcher = document.createElement("div");
+
+scrollWatcher.setAttribute("data-scroll-watcher", "");
+navBar.before(scrollWatcher);
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    navBar.classList.toggle("sticking", !entries[0].isIntersecting);
+  },
+  { rootMargin: "800px 0px 0px 0px" }
+);
+
+navObserver.observe(scrollWatcher);
 
 const purpleShirt = document.getElementById("purple-tshirt");
 

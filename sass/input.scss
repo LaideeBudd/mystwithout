@@ -46,6 +46,10 @@ body {
     font-family: "Dickson Regular";
   }
 
+  nav.sticking {
+    background-color: #4f1271;
+  }
+
   nav {
     padding-left: 1rem;
     position: fixed;
@@ -54,6 +58,8 @@ body {
     align-self: flex-end;
     z-index: 999;
     width: 100vw;
+
+    transition: background-color 500ms;
 
     @include media.xs {
       width: 50vw;
