@@ -73,14 +73,14 @@ const blackShirt = document.getElementById("black-tshirt");
 blackShirt.addEventListener(
   "mouseenter",
   function (event) {
-    event.target.src = "./images/purple-tshirt-back.jpg";
+    event.target.src = "./images/black-tshirt-back.jpg";
   },
   false
 );
 blackShirt.addEventListener(
   "mouseleave",
   function (event) {
-    event.target.src = "./images/purple-tshirt-front.jpg";
+    event.target.src = "./images/black-tshirt-front.jpg";
   },
   false
 );
