@@ -612,7 +612,6 @@ body {
 
     @include media.xs {
       grid-template-columns: 1fr;
-      background-image: url(../images/lamp-portrait.png);
       background-size: 225%;
       background-position: center;
       padding-bottom: 30rem;
@@ -620,7 +619,7 @@ body {
     }
     @include media.sm {
       grid-template-columns: 1fr;
-      background-image: url(../images/lamp-portrait.png);
+
       background-size: 140%;
       background-position: center;
       padding-bottom: 25rem;
@@ -629,7 +628,7 @@ body {
 
     @include media.md {
       grid-template-columns: 1fr;
-      background-image: url(../images/lamp-portrait.png);
+
       background-size: 120%;
       background-position: center;
       padding-bottom: 40rem;
@@ -641,21 +640,21 @@ body {
       flex-direction: column;
 
       @include media.xs {
-        color: #250835;
+        color: #ffffff;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
 
       @include media.sm {
-        color: #250835;
+        color: #ffffff;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
 
       @include media.md {
-        color: #250835;
+        color: #ffffff;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -945,13 +944,13 @@ body {
       padding-right: 5rem;
 
       @include media.xs {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding-top: 6rem;
         padding-right: 1rem;
       }
 
       @include media.sm {
-        font-size: 1rem;
+        font-size: 2rem;
         padding-top: 8rem;
         padding-right: 2rem;
       }
