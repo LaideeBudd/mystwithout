@@ -48,6 +48,14 @@ body {
 
   nav.sticking {
     background-color: #4f1271;
+
+    @include media.xs {
+      background-color: transparent;
+    }
+
+    @include media.sm {
+      background-color: transparent;
+    }
   }
 
   nav {
@@ -253,7 +261,7 @@ body {
     img {
       margin-top: 10rem;
       max-width: 120%;
-      min-width: 120%;
+      min-width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -937,13 +945,13 @@ body {
       padding-right: 5rem;
 
       @include media.xs {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-top: 6rem;
         padding-right: 1rem;
       }
 
       @include media.sm {
-        font-size: 2rem;
+        font-size: 1rem;
         padding-top: 8rem;
         padding-right: 2rem;
       }
